@@ -3,7 +3,7 @@ import Input from "../components/Input";
 import Title from "../components/Title";
 import Button from "../components/Button";
 import { useHistory } from "react-router-dom";
-const copyright = "created by baha ";
+const copyright = "created by Ameni ";
 function HomeContainer() {
   const history = useHistory();
   const [city, setCity] = useState("");
