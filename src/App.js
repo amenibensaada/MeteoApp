@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import HomeContainer from "./containers/HomeContainer";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useHistory,
+} from "react-router-dom";
+import WeatherDetails from "./containers/WeatherDetails";
 
+const copyright = "created by baha ";
 function App() {
+  const [title, setTitle] = useState("");
+
+  const handleonChange = (value) => {
+    setTitle(value);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Switch>
+          <Route exact path={"/weather/:city"} component={WeatherDetails} />
+          <Route path="/" component={HomeContainer} />
+        </Switch>
+      </Router>
     </div>
   );
 }
-
 export default App;
