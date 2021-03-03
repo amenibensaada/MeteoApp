@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import WeatherDetails from "./containers/WeatherDetails";
 
-const copyright = "created by baha ";
+const copyright = "created by ameni ";
 function App() {
   const [title, setTitle] = useState("");
 
