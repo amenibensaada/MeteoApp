@@ -19,7 +19,7 @@ const TodayWeather = ({ data }) => {
       </div>
       <div style={{ width: "30vw" }}>
         <img
-          src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
+          src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
           alt="test"
         />
         <p style={{ fontWeight: "bolder" }}>{temp}°</p>

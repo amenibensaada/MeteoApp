@@ -14,7 +14,7 @@ const WeatherDetails = () => {
   const [erreur, setErreur] = useState(false);
   const [dayslist, setDayslist] = useState([]);
   const [loading, setLoading] = useState(true);
-  const apikey = "3d276dd0248a8f6d4a15500dc0dec11a";
+  const apikey = process.env.REACT_APP_OPENWEATHER_API_KEY;
 
   // Geeting Every day weather from 3h data every day
   const getEveryDayFirst3hoursWeather = (array) => {
