@@ -2,7 +2,7 @@
 
 An earlier React weather interface with city search, current weather and forecast views, using Axios, React Router and OpenWeather.
 
-Educational frontend project · [Current portfolio](https://amenibensaadaportfolio.netlify.app/?utm_source=github&utm_medium=profile&utm_campaign=personal_brand).
+Educational frontend project · [Current portfolio](https://amenibensaada.tn/?utm_source=github&utm_medium=profile&utm_campaign=personal_brand).
 
 ## Run locally
 
